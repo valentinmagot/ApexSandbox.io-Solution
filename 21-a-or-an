@@ -1,8 +1,10 @@
 public String aOrAn(String word) {
     Set<String> voy = {'a', 'e', 'i', 'u'};
     if word[0] in voy {
-        return True
+        return 'an ' + word;
+    }else {
+         return 'a ' + word;
     }
 
-    return False
+   
 }
