@@ -4,5 +4,7 @@ public String aOrAn(String word) {
      }else {
          return 'a ' + word;
      }
+
+     console.log(word.startsWith('a'))
    
 }
