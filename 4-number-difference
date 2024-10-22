@@ -1,0 +1,3 @@
+public Integer diff(Integer a, Integer b) {
+    //code here
+}
