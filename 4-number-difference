@@ -1,3 +1,3 @@
 public Integer diff(Integer a, Integer b) {
-    //code here
+    return math.abs(a-b);
 }
