@@ -1,5 +1,4 @@
 public Decimal computeTip(Decimal total, Integer percent) {
-    Decimal res = (percent / 100) * total;
-    System.debug(res)
-    return res;
+    Decimal percent = percent / 100;
+    return percent * total;
 }
