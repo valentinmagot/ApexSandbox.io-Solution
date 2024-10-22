@@ -1,10 +1,8 @@
 public String aOrAn(String word) {
-    Set<String> voy = {'a', 'e', 'i', 'u'};
-    if word[0] in voy {
-        return 'an ' + word;
-    }else {
+     if word.startsWith('a') || word.startsWith('e') || word.startsWith('i') || word.startsWith('o') || word.startsWith('u') {
+         return 'an ' + word;
+     }else {
          return 'a ' + word;
-    }
-
+     }
    
 }
