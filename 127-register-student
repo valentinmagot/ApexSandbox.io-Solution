@@ -9,10 +9,10 @@ public String registerStudent(String name, String phone, String email) {
     instert newStudent;
 
     apxio__Student__C rec = [
-        SELECT Id, apxio__Registration_Number__c as regNumber
+        SELECT Id, apxio__Registration_Number__c
         FROM apxio__Student__c
         WHERE Id := rec.Id;
     ]
 
-    return rec.regNumber;
+    return rec.apxio__Registration_Number__c;
 }
