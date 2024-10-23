@@ -2,7 +2,7 @@ public String registerStudent(String name, String phone, String email) {
     
     apxio__Student__c newStudent = new apxio__Student__c();
 
-    newStudent.Name = name;
+    newStudent.name = name;
     newStudent.apxio__Phone__c = phone;
     newStudent.apxio__Email__c = email;
 
