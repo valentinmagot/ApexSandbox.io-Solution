@@ -1,6 +1,6 @@
 public String registerStudent(String name, String phone, String email) {
     
-    apxio__Student__c newStudent = apxio__Studend__c();
+    apxio__Student__c newStudent = apxio__Student__c();
 
     newStudent.Name = name;
     newStudent.apxio__Phone__c = phone;
