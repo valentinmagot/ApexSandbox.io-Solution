@@ -8,7 +8,7 @@ public String registerStudent(String name, String phone, String email) {
 
     instert newStudent;
 
-    apxio__Studend__C rec = [
+    apxio__Student__C rec = [
         SELECT Id, apxio__Registration_Number__c as regNumber
         FROM apxio__Student__c
         WHERE Id := rec.Id;
