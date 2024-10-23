@@ -4,7 +4,7 @@ public String registerStudent(String name, String phone, String email) {
 
     newStudent.Name = name;
     newStudent.apxio__Phone__c = phone;
-    newStudent.apxio__Email__C = email;
+    newStudent.apxio__Email__c = email;
 
     instert newStudent;
 
