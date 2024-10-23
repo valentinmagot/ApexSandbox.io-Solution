@@ -6,7 +6,7 @@ public String registerStudent(String name, String phone, String email) {
     newStudent.apxio__Phone__c = phone;
     newStudent.apxio__Email__c = email;
 
-    instert newStudent;
+    insert newStudent;
 
     apxio__Student__C rec = [
         SELECT apxio__Registration_Number__c
