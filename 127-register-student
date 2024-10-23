@@ -11,7 +11,7 @@ public String registerStudent(String name, String phone, String email) {
     apxio__Studend__C rec = [
         SELECT Id, apxio__Registration_Number__c as regNumber
         FROM apxio__Student__c
-        WHERE regNumber := Id;
+        WHERE Id := rec.Id;
     ]
 
     return rec.regNumber;
