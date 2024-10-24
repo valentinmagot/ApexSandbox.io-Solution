@@ -1,6 +1,6 @@
 public List<apxio__Student__c> selectActiveStudents() {
 
-    List<apxio__Student__c> students = new List<apxio__Student__c>();
+    List<apxio__Student__c> s = new List<apxio__Student__c>();
     
     apxio__Student__c rec = [
         SELECT Id, Name, apxio__Active__c
@@ -10,10 +10,10 @@ public List<apxio__Student__c> selectActiveStudents() {
 
     for data in rec {
         if(data.name && data.Id){
-            students.add(data);
+            s.add(data);
         }
         
     }
 
-    return students;
+    return s;
 }
