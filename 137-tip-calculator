@@ -1,3 +1,4 @@
 public Decimal computeTip(Decimal total, Integer percent) {
     Decimal result = (total * percent) / 100;
     return result;
+}
