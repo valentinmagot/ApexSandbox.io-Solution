@@ -1,4 +1,5 @@
 public List<apxio__Student__c> selectActiveStudents() {
+
     List<apxio__Student__c> students = new List<apxio__Student__c>();
     
     apxio__Student__c rec = [
@@ -8,7 +9,10 @@ public List<apxio__Student__c> selectActiveStudents() {
     ];
 
     for data in rec {
-        students.add(data);
+        if(data.name && data.Id){
+            students.add(data);
+        }
+        
     }
 
     return students;
