@@ -3,7 +3,7 @@ public List<apxio__Student__c> selectActiveStudents() {
     List<apxio__Student__c> s = new List<apxio__Student__c>();
     
 
-    for (data : [SELECT Id, Name, apxio__Active__c FROM apxio__Student__c WHERE apxio__Active__c = :true]) {
+    for (data : [SELECT Id, Name, apxio__Active__c FROM apxio__Student__c WHERE apxio__Active__c = :True]) {
         if((data.name) != null && (data.Id != null)){
             s.add(data);
         }
