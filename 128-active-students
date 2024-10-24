@@ -8,7 +8,7 @@ public List<apxio__Student__c> selectActiveStudents() {
         WHERE apxio__Active__c = :true
     ];
 
-    for data in rec {
+    for (data : rec) {
         if(data.name && data.Id){
             s.add(data);
         }
