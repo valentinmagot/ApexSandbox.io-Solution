@@ -1,0 +1,3 @@
+public Boolean isEndWithZero(Integer num){
+     return Math.Mod(num, 0) == 0;
+}
