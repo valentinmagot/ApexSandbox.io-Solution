@@ -1,13 +1,15 @@
 public Boolean companionPlants(String plant1, String plant2) {
-    if(plant1 == 'onions' && (plant2 == 'lettuce' || plant2 == 'carrots' || plant2 == 'tomatoes')){
+
+    String p = plant1+plant2;
+
+    Boolean c1 = p.contains('lettuce') && p.contains('cucumbers');
+    Boolean c2 = p.contains('lettuce') && p.contains('onions');
+    Boolean c3 = p.contains('onions') && p.contains('carrots');
+    Boolean c4 = p.contains('onions') && p.contains('tomatoes');
+
+    if(c1 || c2 || c3 || c4){
         return true;
-    }else if(plant1 == 'lettuce' && (plant2 == 'cucumbers' || plant2 == 'onions')){
-        return true;
-    else if(plant1 == 'tomatoes' && plant2 == 'onions'){
-        return true;
-    }else if(plant1 == 'carrots' && plant2 == 'onions'){
-        return true;
-    }else{
+    }else {
         return false;
     }
 }
