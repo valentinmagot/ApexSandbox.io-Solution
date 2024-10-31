@@ -1,0 +1,10 @@
+public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
+    List<apxio__Student__c> rec = [
+        SELECT Id, Name, apxio__Active__c, apxio__Email__c, apxio__Phone__c
+        FROM apxio__Student__c
+        WHERE apxio__Active__c = True and (apxio__Email__c = null or apxio__Phone__c = null)
+        ORDER BY Name ASC
+    ];
+
+    return rec;
+}
