@@ -9,5 +9,3 @@ public String formatName(String firstName, String lastName) {
         return '';
     }
 }
-
-String.IsBlank(lastName)
