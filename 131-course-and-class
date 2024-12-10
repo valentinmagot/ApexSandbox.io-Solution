@@ -2,6 +2,6 @@ public void createCourseAndClass(String name, String description) {
     <apxio__Course__c> newCourse = new <apxio__Course__c>(name= name, apxio__Course_Details__c= description);
     insert newCourse;
 
-    <apxio__Class__c> newClass = new <apxio__Class__c>(name= name, apxio__Description__c= apxio__Course_Details__c != null ? apxio__Course_Details__c.left(255) : null, apxio__Course__c= newCourse.Id);
+    <apxio__Class__c> newClass = new <apxio__Class__c>(name= name, apxio__Description__c= description?.left(255), apxio__Course__c= newCourse.Id);
     insert newClass;
 }
